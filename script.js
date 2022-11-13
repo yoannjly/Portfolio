@@ -1,5 +1,5 @@
-const spans = document.querySelectorAll("div.container section span");
-const nav = document.querySelectorAll("div.navbar a");
+const spans = document.querySelectorAll("main section span");
+const nav = document.querySelectorAll("header a");
 
 window.onscroll = function() {myFunction()};
 
@@ -14,7 +14,7 @@ function myFunction() {
             current = span.getAttribute("id");
             break;
         }
-    };
+    }
 
     nav.forEach((button) => {
         button.classList.remove("active");

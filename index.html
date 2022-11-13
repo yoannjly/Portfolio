@@ -10,13 +10,13 @@
 </head>
 
 <body>
-<div class="navbar">
+<header>
     <a href="#home" class="button home active">Home</a>
     <a href="#about-me" class="button about-me">About Me</a>
     <a href="#portfolio" class="button portfolio">Portfolio</a>
     <a href="#networks" class="button networks">Networks</a>
-</div>
-<div class="container">
+</header>
+<main>
     <section class="home">
         <span class="anchor" id="home"></span>
         <div class="content content-center">
@@ -24,35 +24,38 @@
             <h3>Backend & Web Developer</h3>
         </div>
     </section>
-    <section class="about-me">
+    <section class="about-me content-center">
         <span class="anchor" id="about-me"></span>
         <div class="content content-center">
             <h1>About Me</h1>
             <p>My name is Yoann JOLY, I'm 18 years old and I'm a student in computer science at the University of Lens.</p>
         </div>
-        <div class="content">
+        <div class="content content-center spacer">
             <h2>My skills</h2>
             <div class="list skills">
-                <div class="border-icons">
+                <div class="skill border-icons">
                     <img src="images/PHP.svg" alt="PHP"/>
                 </div>
-                <div class="border-icons">
+                <div class="skill border-icons">
                     <img src="images/PostgreSQL.svg" alt="PostgreSQL"/>
                 </div>
-                <div class="border-icons">
+                <div class="skill border-icons">
                     <img src="images/Javascript.svg" alt="Javascript"/>
                 </div>
-                <div class="border-icons">
+                <div class="skill border-icons">
                     <img src="images/HTML5.svg" alt="HTML 5"/>
                 </div>
-                <div class="border-icons">
+                <div class="skill border-icons">
                     <img src="images/CSS3.svg" alt="CSS 3"/>
                 </div>
-                <div class="border-icons">
+                <div class="skill border-icons">
                     <img src="images/Git.svg" alt=">Git"/>
                 </div>
-                <div class="border-icons">
+                <div class="skill border-icons">
                     <img src="images/Java.svg" alt=">Java"/>
+                </div>
+                <div class="skill border-icons">
+                    <img src="images/Python.svg" alt=">Python"/>
                 </div>
             </div>
         </div>
@@ -61,9 +64,8 @@
         <span class="anchor" id="portfolio"></span>
         <div class="content content-center">
             <h1>Portfolio</h1>
-            <p>Here are some of my projects.</p>
         </div>
-        <div class="content list projects">
+        <div class="content list projects spacer">
             <div class="project">
                 <h3>PHP Project</h3>
             </div>
@@ -76,9 +78,8 @@
         <span class="anchor" id="networks"></span>
         <div class="content content-center">
             <h1>Networks</h1>
-            <p>Here are my networks.</p>
         </div>
-        <div class="content list networks">
+        <div class="content list networks spacer">
             <a href="https://github.com/yoannjly" target="_blank">
                 <div class="network">
                     <div class="border-icons">
@@ -105,13 +106,14 @@
             </a>
         </div>
     </section>
-</div>
-<div class="footer">
+</main>
+<footer>
     <p>Yoann JOLY</p>
-</div>
+</footer>
 </body>
 
-
+<!--Scripts-->
 <script src="script.js"></script>
+<!--End scripts-->
 
 </html>
