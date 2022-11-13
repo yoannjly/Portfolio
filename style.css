@@ -343,6 +343,10 @@ section.networks .spacer {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .network p {
+        text-align: center;
+    }
+
     .network + .network {
         margin-top: 3vh;
     }
