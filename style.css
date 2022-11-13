@@ -156,6 +156,10 @@ section div.content-center {
     flex-direction: column;
 }
 
+section div:last-child {
+    margin-bottom: 5vh;
+}
+
 div.content-center p {
     text-align: center;
 }
@@ -198,6 +202,48 @@ section.networks .spacer {
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 480px) {
+    h1, h2, h3, p {
+        margin: 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    section.networks .spacer {
+        margin-top: 5vh;
+    }
+
+    .list.skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .list.networks {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .network + .network {
+        margin-top: 3vh;
+    }
 }
 
 .network {
