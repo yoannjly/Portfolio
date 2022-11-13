@@ -247,7 +247,7 @@ section.networks .spacer {
     width: 60px;
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 768px) {
     h1, h2, h3, p {
         margin: 0;
     }
