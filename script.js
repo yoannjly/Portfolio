@@ -1,12 +1,13 @@
+// Met une classe active sur le bouton de navigation correspondant à la section visible
 const spans = document.querySelectorAll("main section span");
 const nav = document.querySelectorAll("header a");
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {scrolling()};
 
-function myFunction() {
-    var current = "";
+function scrolling() {
+    let current = "";
 
-    var span, section;
+    let span, section;
     for (let i = 0; i < spans.length; i++) {
         span = spans[i];
         section = span.parentElement;
@@ -24,12 +25,20 @@ function myFunction() {
     });
 }
 
-/* Sélection des éléments HTML */
-let link = document.getElementById('burger-button')
-let burger = document.querySelector('header nav')
+// Ouvre le menu mobile
+let link = document.getElementById('burger-button');
+let burger = document.querySelector('header nav');
 
-/* gestionnaire d'événement sur le a#link pour venir changer l'attribution de la classe .open à la ul et au span#burger */
 link.addEventListener('click', function(e) {
     e.preventDefault()
     burger.classList.toggle('open')
-})
+});
+
+// Fermer le menu lorsqu'on clique sur un lien (sur mobile)
+let a = document.querySelectorAll('header nav a');
+
+a.forEach((button) => {
+    button.addEventListener('click', function() {
+        burger.classList.toggle('open')
+    })
+});

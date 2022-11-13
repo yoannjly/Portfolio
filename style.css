@@ -302,12 +302,11 @@ section.networks .spacer {
 
     header:has(nav.open) {
         display: inline-block;
-        /*border-bottom: none;*/
     }
 
     #burger-button {
         width: 100%;
-        height: 100%;
+        height: 75px;
         display: flex;
         justify-content: center;
         align-items: center;
