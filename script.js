@@ -1,23 +1,28 @@
-// Met une classe active sur le bouton de navigation correspondant à la section visible
-const spans = document.querySelectorAll("main section span");
-const nav = document.querySelectorAll("header a");
+const anchors = document.querySelectorAll("main section span");
+const nav_buttons = document.querySelectorAll("header nav a");
+const menu_button = document.querySelector('.menu-button');
+const menu = document.querySelector('header nav');
 
-window.onscroll = function() {scrolling()};
+// Met une classe active sur le bouton de navigation correspondant à la section visible
+window.onscroll = function () {
+    scrolling()
+};
 
 function scrolling() {
     let current = "";
 
     let span, section;
-    for (let i = 0; i < spans.length; i++) {
-        span = spans[i];
+    for (let i = 0; i < anchors.length; i++) {
+        span = anchors[i];
         section = span.parentElement;
-        if (window.scrollY <= section.offsetTop + section.offsetHeight * 0.7) {
+        if (window.scrollY <= section.offsetTop + section.offsetHeight * 0.65) {
             current = span.getAttribute("id");
             break;
         }
     }
+    console.log(current);
 
-    nav.forEach((button) => {
+    nav_buttons.forEach((button) => {
         button.classList.remove("active");
         if (button.classList.contains(current)) {
             button.classList.add("active");
@@ -26,19 +31,14 @@ function scrolling() {
 }
 
 // Ouvre le menu mobile
-let link = document.getElementById('burger-button');
-let burger = document.querySelector('header nav');
-
-link.addEventListener('click', function(e) {
+menu_button.addEventListener('click', function (e) {
     e.preventDefault()
-    burger.classList.toggle('open')
+    menu.classList.toggle('open')
 });
 
 // Fermer le menu lorsqu'on clique sur un lien (sur mobile)
-let a = document.querySelectorAll('header nav a');
-
-a.forEach((button) => {
-    button.addEventListener('click', function() {
-        burger.classList.toggle('open')
+nav_buttons.forEach((button) => {
+    button.addEventListener('click', function () {
+        menu.classList.toggle('open')
     })
 });

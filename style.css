@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
 
-@font-face {
-    font-family: 'aqua';
-    src: url('/aqua.ttf') format('truetype');
-}
-
 body,
 html {
     margin: 0;
@@ -61,7 +56,7 @@ a {
     text-decoration: none;
 }
 
-#burger-button {
+.menu-button {
     display: none;
 }
 
@@ -114,7 +109,7 @@ nav a.active:after {
 }
 
 footer {
-    height: 225px;
+    height: calc(50vh - 75px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,7 +156,7 @@ section div.content-center {
     flex-direction: column;
 }
 
-section div:last-child {
+section div.content:last-child {
     margin-bottom: 5vh;
 }
 
@@ -175,39 +170,32 @@ section.home {
 }
 
 .list.skills {
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*flex-wrap: wrap;*/
+    width: auto;
     display: grid;
-    justify-content: center;
     grid-template-columns: repeat(4, 1fr);
+    /*gap: 1rem;*/
+    align-items: center;
+    justify-items: center;
 }
 
-/*.skill {*/
-/*    flex: 1 0 21%;*/
-/*}*/
-
-section.projects .spacer {
-    margin-top: 18vh;
+section.portfolio .spacer {
+    margin-top: 10vh;
 }
 
 .list.projects {
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*flex-wrap: wrap;*/
+    width: auto;
     display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    align-items: center;
+    justify-items: center;
 }
 
 section.networks .spacer {
-    margin-top: 18vh;
+    margin-top: 17vh;
 }
 
 .list.networks {
-    /*display: flex;*/
-    /*justify-content: space-around;*/
-    /*flex-wrap: wrap;*/
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
@@ -222,6 +210,55 @@ section.networks .spacer {
 }
 
 .network p {
+    width: 100%;
+}
+
+.card {
+    height: 450px;
+    min-height: 450px;
+    width: 350px;
+    max-width: 350px;
+    border-radius: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0 1px 30px -1px rgb(33 45 108 / 11%);
+    transition-duration: .3s;
+}
+
+.card .element img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.card .title {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 2rem;
+    height: 6rem;
+    width: 90%;
+}
+
+.card .title h3 {
+    color: #242633;
+    font-size: 33px;
+}
+
+.card .description {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px 0;
+    width: 90%;
+    padding-top: 2rem;
+}
+
+.card .description p {
+    color: #242633;
+    font-size: 22px;
+    text-align: justify;
     width: 100%;
 }
 
@@ -241,7 +278,7 @@ section.networks .spacer {
 }
 
 .border-icons:hover {
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.50);
     box-shadow: 0 1px 30px -1px rgb(33 45 108 / 11%), 0 0 0 10px rgb(33 45 108 / 11%);
 }
 
@@ -278,6 +315,33 @@ section.networks .spacer {
 
     header {
         height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-button {
+        width: 100%;
+        height: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        padding-right: 2.5rem;
+        font-size: 40px;
+        color: white;
+        cursor: pointer;
+    }
+
+    header span + span {
+        margin-top: 0.5rem;
+    }
+
+    header span {
+        width: 32px;
+        height: 3px;
+        border-radius: 25%;
+        background-color: #ffffff;
     }
 
     header nav {
@@ -293,7 +357,7 @@ section.networks .spacer {
     }
 
     nav a {
-        padding: 20px 100px;
+        padding: 25px 100vw;
     }
 
     nav a:after {
@@ -301,24 +365,8 @@ section.networks .spacer {
     }
 
     nav a.active:after {
-        width: 40%;
-        left: 30%;
-    }
-
-    header:has(nav.open) {
-        display: inline-block;
-    }
-
-    #burger-button {
-        width: 100%;
-        height: 75px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        font-size: 40px;
-        color: white;
-        cursor: pointer;
+        width: 8%;
+        left: 46%;
     }
 
     section div.content {
