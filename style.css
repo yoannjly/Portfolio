@@ -56,7 +56,7 @@ a {
     text-decoration: none;
 }
 
-.menu-button {
+header a.menu-button {
     display: none;
 }
 
@@ -109,7 +109,7 @@ nav a.active:after {
 }
 
 footer {
-    height: calc(50vh - 75px);
+    height: calc((100vh - 75px) / 2);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -321,7 +321,7 @@ section.networks .spacer {
         flex-direction: column;
     }
 
-    .menu-button {
+    header a.menu-button {
         width: 100%;
         height: 75px;
         display: flex;
@@ -358,17 +358,17 @@ section.networks .spacer {
     }
 
     nav a {
-        padding: 25px 100vw;
+        padding: 25px 10px;
     }
 
     nav a:after {
         margin-bottom: 10px;
     }
 
-    nav a.active:after {
-        width: 8%;
-        left: 46%;
-    }
+    /*nav a.active:after {*/
+    /*    width: 8%;*/
+    /*    left: 50%;*/
+    /*}*/
 
     section div.content {
         width: 90%;
