@@ -247,6 +247,10 @@ section.networks .spacer {
     font-size: 33px;
 }
 
+.card .title.title-small h3 {
+    font-size: 30px;
+}
+
 .card .description {
     font-size: 15px;
     font-weight: 400;
