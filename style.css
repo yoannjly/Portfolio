@@ -108,6 +108,37 @@ nav a.active:after {
     left: 0;
 }
 
+div.language-selector {
+    margin: 0 25px;
+    position: absolute;
+    right: 0;
+    top: 28px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.language-selector a {
+    padding: 0 10px;
+}
+
+div.language-selector img {
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+}
+
+div.language-selector a:after {
+    margin-bottom: auto;
+    left: 50%;
+}
+
+nav a.active:after {
+    width: 100%;
+    left: 0;
+}
+
 footer {
     height: calc((100vh - 75px) / 2);
     display: flex;
@@ -226,6 +257,10 @@ section.networks .spacer {
     align-items: center;
     box-shadow: 0 1px 30px -1px rgb(33 45 108 / 11%);
     transition-duration: .3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card .element img {
@@ -364,6 +399,17 @@ section.networks .spacer {
         background-color: #21222d;
     }
 
+    div.language-selector {
+        position: relative;
+        top: auto;
+    }
+
+    div.language-selector img {
+        margin: 0.5rem 1rem;
+        height: 40px;
+        width: 40px;
+    }
+
     nav a {
         padding: 25px 10px;
     }
@@ -376,7 +422,6 @@ section.networks .spacer {
     /*    width: 8%;*/
     /*    left: 50%;*/
     /*}*/
-
     section div.content {
         width: 90%;
     }

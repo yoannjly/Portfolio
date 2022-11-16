@@ -1,5 +1,5 @@
 const anchors = document.querySelectorAll("main section span");
-const nav_buttons = document.querySelectorAll("header nav a");
+const nav_buttons = document.querySelectorAll("header nav a.button");
 const menu_button = document.querySelector('header a.menu-button');
 const menu = document.querySelector('header nav');
 
