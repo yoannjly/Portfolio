@@ -33,7 +33,6 @@ function scrolling() {
             break;
         }
     }
-    console.log(current);
 
     nav_buttons.forEach((button) => {
         button.classList.remove("active");

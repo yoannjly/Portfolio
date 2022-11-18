@@ -1,63 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap');
+@import "https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:wght@300&display=swap";
 
-body,
-html {
+body, html {
     margin: 0;
     font-family: poppins, sans-serif;
     color: #c4c3ca;
     background-color: #21222d;
     -webkit-transition: all 300ms linear;
-    transition: all 300ms linear;
+    transition: all 300ms linear
 }
 
 main {
     background-color: #242633;
-    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg);
     background-position: center;
     background-repeat: repeat;
-    background-size: 4%;
+    background-size: 4%
 }
 
 @media (prefers-reduced-motion: no-preference) {
     html {
-        scroll-behavior: smooth;
+        scroll-behavior: smooth
     }
 }
 
 h1, h2, h3, p {
     margin: 0;
-    text-align: center;
+    text-align: center
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 80px
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 50px
 }
 
 h3 {
-    font-size: 30px;
+    font-size: 30px
 }
 
 p {
     font-size: 20px;
-    width: 65%;
+    width: 65%
 }
 
 span.anchor {
     position: absolute;
-    top: -75px;
+    top: -75px
 }
 
 a {
     color: #c4c3ca;
-    text-decoration: none;
+    text-decoration: none
 }
 
 header a.menu-button {
-    display: none;
+    display: none
 }
 
 header {
@@ -65,29 +64,25 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*font-size: 17px;*/
     background-color: #21222d;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #000;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 999
 }
 
 header nav {
     height: auto;
-    font-size: 17px;
+    font-size: 17px
 }
 
 nav a {
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: .1em;
     padding: 0 25px;
     position: relative;
-    font-family: 'Montserrat', sans-serif;
-
-    /*-webkit-transition: all 300ms linear;*/
-    /*transition: all 300ms linear;*/
+    font-family: 'Montserrat', sans-serif
 }
 
 nav a:after {
@@ -98,14 +93,14 @@ nav a:after {
     margin-bottom: -22px;
     left: 50%;
     position: absolute;
-    background: #ffffff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
+    background: #fff;
+    transition: width .3s ease 0s, left .3s ease 0s;
+    width: 0
 }
 
 nav a.active:after {
     width: 100%;
-    left: 0;
+    left: 0
 }
 
 div.language-selector {
@@ -116,27 +111,27 @@ div.language-selector {
     height: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 div.language-selector a {
-    padding: 0 10px;
+    padding: 0 10px
 }
 
 div.language-selector img {
     width: 25px;
     height: 25px;
-    margin: 0 5px;
+    margin: 0 5px
 }
 
 div.language-selector a:after {
     margin-bottom: auto;
-    left: 50%;
+    left: 50%
 }
 
 nav a.active:after {
     width: 100%;
-    left: 0;
+    left: 0
 }
 
 footer {
@@ -146,21 +141,21 @@ footer {
     align-items: center;
     font-size: 17px;
     background-color: #21222d;
-    border-top: 1px solid #000000;
+    border-top: 1px solid #000;
     bottom: 0;
-    width: 100%;
+    width: 100%
 }
 
 footer p {
     color: #c4c3ca;
     margin: 0;
     font-size: 30px;
-    text-decoration: none;
+    text-decoration: none
 }
 
 main {
     height: auto;
-    width: 100%;
+    width: 100%
 }
 
 main section {
@@ -170,47 +165,53 @@ main section {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 80%;
+    margin: auto
 }
 
 section div.content {
-    width: 70%;
+    width: 70%
 }
 
 .spacer {
-    margin-top: 15vh;
+    margin-top: 15vh
 }
 
 section div.content-center {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column
 }
 
 section div.content:last-child {
-    margin-bottom: 5vh;
-}
-
-div.content-center p {
-    /*text-align: center;*/
+    margin-bottom: 5vh
 }
 
 section.home {
     height: calc(100vh);
-    justify-content: center;
+    justify-content: center
+}
+
+section.about-me {
+    flex-direction: row
+}
+
+section.about-me .spacer {
+    margin-bottom: 12vh;
+    margin-top: 0
 }
 
 .list.skills {
     width: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /*gap: 1rem;*/
     align-items: center;
-    justify-items: center;
+    justify-items: center
 }
 
 section.portfolio .spacer {
-    margin-top: 10vh;
+    margin-top: 10vh
 }
 
 .list.projects {
@@ -219,17 +220,17 @@ section.portfolio .spacer {
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
     align-items: center;
-    justify-items: center;
+    justify-items: center
 }
 
 section.networks .spacer {
-    margin-top: 17vh;
+    margin-top: 17vh
 }
 
 .list.networks {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr)
 }
 
 .network {
@@ -237,71 +238,95 @@ section.networks .spacer {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin: 0 25px;
+    margin: 0 25px
 }
 
 .network p {
-    width: 100%;
+    width: 100%
 }
 
 .card {
-    height: 450px;
-    min-height: 450px;
-    width: 350px;
-    max-width: 350px;
+    height: 200px;
+    min-height: 200px;
+    width: 550px;
+    max-width: 550px;
+    border-radius: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0 1px 30px -1px rgb(33 45 108 / 11%);
+    transition-duration: .3s
+}
+
+.card .left {
+    min-height: 100%;
+    height: 100%;
+    width: 200px;
+    min-width: 200px;
     border-radius: 20px;
     background: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    box-shadow: 0 1px 30px -1px rgb(33 45 108 / 11%);
-    transition-duration: .3s;
+    justify-content: center;
+    align-items: center
+}
+
+.card img {
+    max-height: 100%;
+    height: auto;
+    width: 100%;
+    min-width: 100%;
+    background-color: #fff;
+    border-radius: 20px 5px 5px 20px
+}
+
+.card .right {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
 }
 
 .card:hover {
-    transform: scale(1.05);
-}
-
-.card .element img {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    transform: scale(1.05)
 }
 
 .card .title {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
     font-weight: 600;
-    padding-top: 2rem;
-    height: 6rem;
-    width: 90%;
+    max-height: 100%;
+    height: auto;
+    width: 100%;
+    min-width: 100%
 }
 
 .card .title h3 {
     color: #242633;
-    font-size: 33px;
+    font-size: 1.5rem
 }
 
 .card .title.title-small h3 {
-    font-size: 30px;
+    font-size: 1.25rem
 }
 
 .card .description {
-    font-size: 15px;
-    font-weight: 400;
+    font-weight: 800;
     margin: 10px 0;
-    width: 90%;
-    padding-top: 2rem;
+    width: 90%
 }
 
 .card .description p {
     color: #242633;
-    font-size: 22px;
+    font-size: .9rem;
     text-align: justify;
-    width: 100%;
+    width: 100%
 }
 
 .border-icons {
@@ -316,51 +341,51 @@ section.networks .spacer {
     justify-content: center;
     align-items: center;
     box-shadow: 0 1px 30px -1px rgb(33 45 108 / 11%);
-    transition-duration: .3s;
+    transition-duration: .3s
 }
 
 .border-icons:hover {
     background: rgba(255, 255, 255, 0.50);
-    box-shadow: 0 1px 30px -1px rgb(33 45 108 / 11%), 0 0 0 10px rgb(33 45 108 / 11%);
+    box-shadow: 0 1px 30px -1px rgb(33 45 108 / 11%), 0 0 0 10px rgb(33 45 108 / 11%)
 }
 
 .border-icons img {
     height: 60px;
-    width: 60px;
+    width: 60px
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 900px) {
     main {
-        background-size: 17%;
+        background-size: 17%
     }
 
     h1, h2, h3, p {
-        margin: 0;
+        margin: 0
     }
 
     h1 {
-        font-size: 55px;
+        font-size: 55px
     }
 
     h2 {
-        font-size: 50px;
+        font-size: 50px
     }
 
     h3 {
-        font-size: 30px;
+        font-size: 30px
     }
 
     p {
         font-size: 20px;
         width: 100%;
-        text-align: justify;
+        text-align: justify
     }
 
     header {
         height: auto;
         width: 100%;
         display: flex;
-        flex-direction: column;
+        flex-direction: column
     }
 
     header a.menu-button {
@@ -372,23 +397,23 @@ section.networks .spacer {
         align-items: end;
         padding-right: 2.5rem;
         font-size: 40px;
-        color: white;
-        cursor: pointer;
+        color: #fff;
+        cursor: pointer
     }
 
     header span + span {
-        margin-top: 0.5rem;
+        margin-top: .5rem
     }
 
     header span {
         width: 32px;
         height: 3px;
         border-radius: 25%;
-        background-color: #ffffff;
+        background-color: #fff
     }
 
     header nav {
-        display: none;
+        display: none
     }
 
     header nav.open {
@@ -396,61 +421,100 @@ section.networks .spacer {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        background-color: #21222d;
+        background-color: #21222d
     }
 
     div.language-selector {
         position: relative;
-        top: auto;
+        top: auto
     }
 
     div.language-selector img {
-        margin: 0.5rem 1rem;
+        margin: .5rem 1rem;
         height: 40px;
-        width: 40px;
+        width: 40px
     }
 
     nav a {
-        padding: 25px 10px;
+        padding: 25px 10px
     }
 
     nav a:after {
-        margin-bottom: 10px;
+        margin-bottom: 10px
     }
 
-    /*nav a.active:after {*/
-    /*    width: 8%;*/
-    /*    left: 50%;*/
-    /*}*/
+    main section {
+        width: 100%;
+        margin: auto
+    }
+
     section div.content {
-        width: 90%;
+        width: 90%
+    }
+
+    section.about-me {
+        flex-direction: column
     }
 
     section.networks .spacer {
-        margin-top: 5vh;
+        margin-top: 5vh
     }
 
     .list.skills {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr)
     }
 
     .list.projects {
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .project + .project {
-        margin-top: 3vh;
+        grid-template-columns: repeat(1, 1fr)
     }
 
     .list.networks {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr)
     }
 
     .network p {
-        text-align: center;
+        text-align: center
     }
 
     .network + .network {
-        margin-top: 3vh;
+        margin-top: 3vh
+    }
+
+    .card {
+        width: 90%;
+        max-width: 90%;
+        height: auto;
+        min-height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+
+    .card .left {
+        min-height: 200px
+    }
+
+    .card .left.small-height {
+        min-height: 150px
+    }
+
+    .card .title {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        padding: 0
+    }
+
+    .card .title h3 {
+        font-size: 1.25rem
+    }
+
+    .card .description {
+        height: auto;
+        min-height: auto
+    }
+
+    .card img {
+        border-radius: 0 0 20px 20px
     }
 }
