@@ -399,6 +399,23 @@ section.networks .spacer {
     }
 }
 
+@media all and (max-width: 1160px) {
+
+    section.about-me {
+        flex-direction: column
+    }
+
+    section.about-me p {
+        font-size: 20px;
+        width: 100%;
+        text-align: justify
+    }
+
+    .list.skills {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
 @media all and (max-width: 900px) {
     main {
         background-size: 17%
@@ -497,16 +514,8 @@ section.networks .spacer {
         width: 90%
     }
 
-    section.about-me {
-        flex-direction: column
-    }
-
     section.networks .spacer {
         margin-top: 5vh
-    }
-
-    .list.skills {
-        grid-template-columns: repeat(3, 1fr)
     }
 
     .list.networks {
