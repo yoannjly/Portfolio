@@ -248,7 +248,7 @@ section.networks .spacer {
 .card {
     height: 200px;
     min-height: 200px;
-    width: 550px;
+    width: 100%;
     max-width: 550px;
     border-radius: 20px;
     background: #fff;
@@ -352,6 +352,51 @@ section.networks .spacer {
 .border-icons img {
     height: 60px;
     width: 60px
+}
+
+@media all and (max-width: 1260px) {
+
+    .list.projects {
+        grid-template-columns: repeat(1, 1fr)
+    }
+
+    .card {
+        width: 90%;
+        max-width: 90%;
+        height: auto;
+        min-height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+
+    .card .left {
+        min-height: 200px
+    }
+
+    .card .left.small-height {
+        min-height: 150px
+    }
+
+    .card .title {
+        width: 100%;
+        height: auto;
+        min-height: auto;
+        padding: 0
+    }
+
+    .card .title h3 {
+        font-size: 1.25rem
+    }
+
+    .card .description {
+        height: auto;
+        min-height: auto
+    }
+
+    .card img {
+        border-radius: 0 0 20px 20px
+    }
 }
 
 @media all and (max-width: 900px) {
@@ -464,10 +509,6 @@ section.networks .spacer {
         grid-template-columns: repeat(3, 1fr)
     }
 
-    .list.projects {
-        grid-template-columns: repeat(1, 1fr)
-    }
-
     .list.networks {
         grid-template-columns: repeat(1, 1fr)
     }
@@ -478,43 +519,5 @@ section.networks .spacer {
 
     .network + .network {
         margin-top: 3vh
-    }
-
-    .card {
-        width: 90%;
-        max-width: 90%;
-        height: auto;
-        min-height: auto;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center
-    }
-
-    .card .left {
-        min-height: 200px
-    }
-
-    .card .left.small-height {
-        min-height: 150px
-    }
-
-    .card .title {
-        width: 100%;
-        height: auto;
-        min-height: auto;
-        padding: 0
-    }
-
-    .card .title h3 {
-        font-size: 1.25rem
-    }
-
-    .card .description {
-        height: auto;
-        min-height: auto
-    }
-
-    .card img {
-        border-radius: 0 0 20px 20px
     }
 }
