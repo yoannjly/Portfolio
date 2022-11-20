@@ -288,7 +288,7 @@ section.networks .spacer {
     border-radius: 0 20px 20px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center
 }
 
@@ -304,7 +304,8 @@ section.networks .spacer {
     max-height: 100%;
     height: auto;
     width: 100%;
-    min-width: 100%
+    min-width: 100%;
+    margin: 0.75rem
 }
 
 .card .title h3 {
@@ -312,20 +313,31 @@ section.networks .spacer {
     font-size: 1.5rem
 }
 
-.card .title.title-small h3 {
-    font-size: 1.25rem
-}
-
 .card .description {
     font-weight: 800;
-    margin: 10px 0;
-    width: 90%
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center
 }
 
 .card .description p {
     color: #242633;
     font-size: .9rem;
     text-align: justify;
+    width: 100%
+}
+
+.card .date {
+    font-weight: 800;
+    width: 90%;
+    margin: 3px
+}
+
+.card .date p {
+    color: #242633;
+    font-size: .9rem;
+    text-align: end;
     width: 100%
 }
 
@@ -406,7 +418,7 @@ section.networks .spacer {
     }
 
     section.about-me p {
-        font-size: 20px;
+        font-size: 1.3rem;
         width: 100%;
         text-align: justify
     }
@@ -426,19 +438,19 @@ section.networks .spacer {
     }
 
     h1 {
-        font-size: 55px
+        font-size: 3.45rem
     }
 
     h2 {
-        font-size: 50px
+        font-size: 2.25rem
     }
 
     h3 {
-        font-size: 30px
+        font-size: 1.9rem
     }
 
     p {
-        font-size: 20px;
+        font-size: 1.3rem;
         width: 100%;
         text-align: justify
     }
